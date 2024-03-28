@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>교사 일정 달력</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="calendar">
+    <div class="month">
+      <h2>2024년 3월</h2>
+    </div>
+    <div class="weekdays">
+      <div>일</div>
+      <div>월</div>
+      <div>화</div>
+      <div>수</div>
+      <div>목</div>
+      <div>금</div>
+      <div>토</div>
+    </div>
+    <div class="days" id="days">
+      <!-- 여기에 각 날짜에 해당하는 칸들이 들어갑니다. -->
+    </div>
+  </div>
+
+  <!-- 모달 창 -->
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>일정 추가</h2>
+      <form id="event-form">
+        <label for="title">제목:</label><br>
+        <input type="text" id="title" name="title"><br>
+        <label for="content">내용:</label><br>
+        <textarea id="content" name="content"></textarea><br>
+        <button type="submit">저장하기</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
